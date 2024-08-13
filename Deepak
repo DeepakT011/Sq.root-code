@@ -1,0 +1,25 @@
+class SquareRootCalculator {
+    
+    public double calculateSquareRoot(double number) {
+        if (number < 0) {
+            System.out.println("Negative numbers don't have real square roots.");
+            return -1;
+        }
+        return Math.sqrt(number);
+    }
+}
+
+public class SquareRoot {
+    public static void main(String[] args) {
+
+        SquareRootCalculator calculator = new SquareRootCalculator();
+
+        double number = 25.0;
+
+        double result = calculator.calculateSquareRoot(number);
+
+        if (result != -1) {
+            System.out.println("The square root of " + number + " is " + result);
+        }
+    }
+}
